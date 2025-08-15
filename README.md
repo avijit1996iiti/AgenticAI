@@ -69,7 +69,7 @@ The provided example:
 - LangGraph – Graph-based multi-agent orchestration
 - OpenAI / Llama-based LLMs – Reasoning and content generation
 - Vector DB – RAG capabilities
-- Python 3.11+
+- Python 3.9+
 
 ## Installation
 ```bash
@@ -99,5 +99,6 @@ This launches the multi-agent system and processes queries via the Supervisor Ag
 
 * Rahul Grover (DOE, Spring Financial) – for initiating KSS and giving me the platform to share this.
 * Team – for your valuable time and engagement during the session.
+
 
 
