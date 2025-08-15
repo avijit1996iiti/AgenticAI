@@ -79,7 +79,7 @@ python -m venv .venv
 source .venv/bin/activate  # Linux/Mac
 .venv\Scripts\activate     # Windows
 pip install -r requirements.txt
-
+```
 
 ## Usage
 
@@ -99,4 +99,5 @@ This launches the multi-agent system and processes queries via the Supervisor Ag
 
 * Rahul Grover (DOE, Spring Financial) – for initiating KSS and giving me the platform to share this.
 * Team – for your valuable time and engagement during the session.
+
 
