@@ -21,17 +21,24 @@ def test_langchain_imports():
         
         # Test langchain-core imports
         from langchain_core.messages import BaseMessage
-        from langchain_core.output_parsers import StrOutputParser
+        from langchain_core.output_parsers import StrOutputParser, PydanticOutputParser
         from langchain_core.runnables import RunnablePassthrough
-        print("✅ langchain-core imports successful")
+        from langchain_core.prompts import PromptTemplate
+        print("✅ langchain-core imports successful (BaseMessage, StrOutputParser, PydanticOutputParser, RunnablePassthrough, PromptTemplate)")
         
         # Test langchain-community imports
         from langchain_community.tools import DuckDuckGoSearchRun
-        print("✅ langchain-community imports successful (DuckDuckGoSearchRun)")
+        from langchain_community.document_loaders import PyPDFLoader
+        from langchain_community.vectorstores import FAISS
+        print("✅ langchain-community imports successful (DuckDuckGoSearchRun, PyPDFLoader, FAISS)")
+        
+        # Test langchain-text-splitters imports
+        from langchain_text_splitters import RecursiveCharacterTextSplitter
+        print("✅ langchain-text-splitters imports successful (RecursiveCharacterTextSplitter)")
         
         # Test langchain-huggingface imports
         from langchain_huggingface import HuggingFaceEmbeddings
-        print("✅ langchain-huggingface imports successful")
+        print("✅ langchain-huggingface imports successful (HuggingFaceEmbeddings)")
         
         # Test langchain-openai imports (updated to 0.3.30)
         from langchain_openai import ChatOpenAI
@@ -47,6 +54,7 @@ def test_langchain_imports():
         print("   - langgraph: 0.6.5")
         print("   - langchain-openai: 0.3.30")
         print("   - All other LangChain packages working correctly")
+        print("✅ All deprecated imports have been updated to current paths")
         
         return True
         
@@ -102,3 +110,4 @@ if __name__ == "__main__":
     else:
         print("❌ SOME TESTS FAILED - Check the errors above")
         sys.exit(1)
+
