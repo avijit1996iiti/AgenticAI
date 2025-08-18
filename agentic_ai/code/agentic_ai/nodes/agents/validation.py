@@ -38,4 +38,3 @@ def validation(state: AgentState):
     print("Parsed response:", response)
 
     return {"messages": [response.Topic]}
-

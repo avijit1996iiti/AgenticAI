@@ -8,4 +8,3 @@ class TopicSelectionParser(BaseModel):
 
 
 parser = PydanticOutputParser(pydantic_object=TopicSelectionParser)
-

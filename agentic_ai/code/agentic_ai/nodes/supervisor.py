@@ -36,4 +36,3 @@ def supervisor(state: AgentState):
     print("Parsed response:", response)
 
     return {"messages": [response.Topic]}
-

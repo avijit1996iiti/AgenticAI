@@ -50,12 +50,13 @@ workflow.add_edge("LLM", "VALIDATION")
 workflow.add_edge("WEB", "VALIDATION")
 workflow.add_edge("STOCK", "VALIDATION")
 
-workflow.add_conditional_edges("VALIDATION", validation_router_1, {"yes": END, "no": "Supervisor"})
+workflow.add_conditional_edges(
+    "VALIDATION", validation_router_1, {"yes": END, "no": "Supervisor"}
+)
 
 
-app = workflow.compile() 
+app = workflow.compile()
 # convert a defined workflow or agent system into a runnable application or executable graph.
-
 
 
 # from IPython.display import Image, display
@@ -73,7 +74,6 @@ app = workflow.compile()
 # )
 
 
-
 ### RAG Example
 # run_agentic_app_from_file(
 #     app= app,
@@ -82,8 +82,7 @@ app = workflow.compile()
 # )
 
 
-
-# Stock Price Checker 
+# Stock Price Checker
 # run_agentic_app_from_file(
 #     app= app,
 #     input_path= "agentic_ai/data/input/stock_price_message.txt",
@@ -91,10 +90,9 @@ app = workflow.compile()
 # )
 
 
-
 # Web
 run_agentic_app_from_file(
-    app= app,
-    input_path= "agentic_ai/data/input/web_message.txt",
-    output_path= "agentic_ai/data/output/web_message.json"
+    app=app,
+    input_path="agentic_ai/data/input/web_message.txt",
+    output_path="agentic_ai/data/output/web_message.json",
 )

@@ -61,7 +61,3 @@ class CustomRag:
         )
         result = rag_chain.invoke(question)
         return {"messages": [result]}
-
-
-
-
