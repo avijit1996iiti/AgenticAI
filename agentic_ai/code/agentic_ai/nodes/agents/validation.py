@@ -1,4 +1,4 @@
-from langchain.prompts import PromptTemplate
+from langchain_core.prompts import PromptTemplate
 
 from agentic_ai.validations.validation import parser
 from agentic_ai.utils.agent_state import AgentState
@@ -38,3 +38,4 @@ def validation(state: AgentState):
     print("Parsed response:", response)
 
     return {"messages": [response.Topic]}
+

@@ -1,7 +1,7 @@
 from agentic_ai.utils.agent_state import AgentState
 from agentic_ai.validations.validation import parser
 from agentic_ai.models.models import Models
-from langchain.prompts import PromptTemplate
+from langchain_core.prompts import PromptTemplate
 
 
 def supervisor(state: AgentState):
@@ -36,3 +36,4 @@ def supervisor(state: AgentState):
     print("Parsed response:", response)
 
     return {"messages": [response.Topic]}
+

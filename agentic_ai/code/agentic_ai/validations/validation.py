@@ -1,5 +1,5 @@
 from pydantic import BaseModel, Field
-from langchain.output_parsers import PydanticOutputParser
+from langchain_core.output_parsers import PydanticOutputParser
 
 
 class TopicSelectionParser(BaseModel):
@@ -8,3 +8,4 @@ class TopicSelectionParser(BaseModel):
 
 
 parser = PydanticOutputParser(pydantic_object=TopicSelectionParser)
+
